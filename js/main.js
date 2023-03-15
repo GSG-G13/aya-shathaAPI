@@ -99,7 +99,25 @@ submitBtn.addEventListener('click', () => {
 })
 
 
+anime.addEventListener("click", () => {
+    divDetails.innerHTML = '';
+    const animeName = inputSearch.value;
+    const url2 = `https://api.giphy.com/v1/gifs/search?api_key=BEhmVfKdPW8J3qZKPhXMCyNszDlbEci4&q=${animeName}` //images
+    animeDetails.style.display = 'block'
+    const displayImages = (obj2) => {
+        obj2.data.slice(-10).forEach(e => {
+            const GifContainer = document.createElement('div');
+            GifContainer.classList.add('anime-gif-img');
+            divDetails.appendChild(GifContainer);
 
+            const GifImage = document.createElement('img');
+            GifImage.src = e.images.downsized_medium.url;
+            GifContainer.appendChild(GifImage);
+        });
+
+    }
+    fetch('GET', url2, displayImages)
+});
 
 
 closeAnime.addEventListener("click", () => {
