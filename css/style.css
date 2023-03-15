@@ -212,6 +212,9 @@ ol {
 
 .anime-details {
     position: fixed;
+    border: #000000;
+    border-style: 2px;
+    background-color: #fadede;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -219,8 +222,6 @@ ol {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    color: #fff;
-    background: var(--tenne-tawny);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -260,7 +261,7 @@ ol {
     position: absolute;
     right: 2rem;
     top: 2rem;
-    font-size: 1.8rem;
+    font-size: 1rem;
     background: #fff;
     border: none;
     width: 35px;
@@ -288,7 +289,7 @@ ol {
 .anime-gif-img img {
 
     border-radius: 5%;
-
+width: 70%;
     margin: 0 auto;
     flex-direction: row;
     display: flex;
@@ -436,7 +437,7 @@ nav {
     }
 
     .anime-details {
-        width: 700px;
+        width: 600px;
     }
 }
 
