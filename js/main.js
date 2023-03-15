@@ -88,7 +88,7 @@ submitBtn.addEventListener('click', () => {
             const imageNotFound = document.createElement('div');
             imageNotFound.classList.add('notFound');
             const defaultImage = document.createElement('img');
-            defaultImage.src = './imgs/error-404.png';
+            defaultImage.src = './imges/error-404.png';
             defaultImage.setAttribute('width', '150px');
             imageNotFound.textContent = "We didn't find any Anime,try again!"
             result.appendChild(imageNotFound.appendChild(defaultImage));
